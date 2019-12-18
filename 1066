@@ -1,0 +1,20 @@
+pares = []
+impares = []
+positivos = []
+negativos = []
+
+for i in range(5):
+    x = int(input())
+    if x % 2 == 0:
+        pares.append(x)
+    else:
+        impares.append(x)
+    if x < 0:
+        negativos.append(x)
+    elif x > 0:
+        positivos.append(x)
+
+print(len(pares), 'valor(es) par(es)')
+print(len(impares), 'valor(es) impar(es)')
+print(len(positivos), 'valor(es) positivo(s)')
+print(len(negativos), 'valor(es) negativo(s)')

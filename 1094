@@ -1,0 +1,22 @@
+n = int(input())
+total = 0
+coelhos = 0
+ratos = 0
+sapos = 0
+for i in range(n):
+    testes = input().split(' ')
+    total += int(testes[0])
+    if testes[1] == 'R':
+        ratos += int(testes[0])
+    if testes[1] == 'C':
+        coelhos += int(testes[0])
+    if testes[1] == 'S':
+        sapos += int(testes[0])
+
+print('Total:', total, 'cobaias')
+print('Total de coelhos:', coelhos)
+print('Total de ratos:', ratos)
+print('Total de sapos:', sapos)
+print('Percentual de coelhos: {:.2f}'.format((coelhos / total) * 100), '%')
+print('Percentual de ratos: {:.2f}'.format((ratos / total) * 100), '%')
+print('Percentual de sapos: {:.2f}'.format((sapos / total) * 100), '%')

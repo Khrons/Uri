@@ -1,0 +1,11 @@
+x, y, z = map(int, input().split())
+numeros = [x, y, z]
+sorteados = sorted(numeros)
+
+print(sorteados[0])
+print(sorteados[1])
+print(sorteados[2])
+print('')
+print(numeros[0])
+print(numeros[1])
+print(numeros[2])

@@ -1,0 +1,13 @@
+n = int(input())
+x = range(n)
+
+inner = 0
+out = 0
+for x in range(n):
+    i = int(input())
+    if i in range(10, 20):
+        inner += 1
+    else:
+        out += 1
+print(inner, 'in')
+print(out, 'out')

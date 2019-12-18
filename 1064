@@ -1,0 +1,13 @@
+positivos = []
+
+for i in range(6):
+    x = input()
+    if float(x) > 0:
+        positivos.append(float(x))
+
+soma = sum(positivos)
+a = len(positivos)
+media = soma / a
+
+print(a, 'valores positivos')
+print('{:.1f}'.format(media))

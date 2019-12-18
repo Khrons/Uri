@@ -1,0 +1,38 @@
+diai = int(input().split()[1])
+
+hora1 = input().split(':')
+horai = int(hora1[0])
+minutoi = int(hora1[1])
+segundoi = int(hora1[2])
+
+diaf = int(input().split()[1])
+
+hora2 = input().split(':')
+horaf = int(hora2[0])
+minutof = int(hora2[1])
+segundof = int(hora2[2])
+
+dia = diaf - diai
+
+hora = horaf - horai
+
+if hora < 0:
+    hora += 24
+    dia -= 1
+
+minuto = minutof - minutoi
+
+if minuto < 0:
+    minuto += 60
+    hora -= 1
+
+segundo = segundof - segundoi
+
+if segundo < 0:
+    segundo += 60
+    minuto -= 1
+
+print(dia, 'dia(s)')
+print(hora, 'hora(s)')
+print(minuto, 'minuto(s)')
+print(segundo, 'segundo(s)')

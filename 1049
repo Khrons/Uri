@@ -1,0 +1,31 @@
+palavra = input()
+
+if palavra == 'vertebrado':
+    segunda = input()
+    if segunda == 'ave':
+        terceira = input()
+        if terceira == 'carnivoro':
+            print('aguia')
+        elif terceira == 'onivoro':
+            print('pomba')
+    elif segunda == 'mamifero':
+        terceira = input()
+        if terceira == 'onivoro':
+            print('homem')
+        elif terceira == 'herbivoro':
+            print('vaca')
+
+if palavra == 'invertebrado':
+    segunda = input()
+    if segunda == 'inseto':
+        terceira = input()
+        if terceira == 'hematofago':
+            print('pulga')
+        elif terceira == 'herbivoro':
+            print('lagarta')
+    if segunda == 'anelideo':
+        terceira = input()
+        if terceira == 'hematofago':
+            print('sanguessuga')
+        if terceira == 'onivoro':
+            print('minhoca')

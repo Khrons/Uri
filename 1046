@@ -1,0 +1,9 @@
+x, y = map(int, input().split())
+
+if x >= y:
+    horay = 24 - x
+    hora = horay + y
+    print('O JOGO DUROU', int(hora), 'HORA(S)')
+else:
+    hora = y - x
+    print('O JOGO DUROU', hora, 'HORA(S)')

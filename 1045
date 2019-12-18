@@ -1,20 +1,20 @@
-n = int(input())
-impares = []
-for i in range(n):
-    x, y = map(int, input().split())
-    if x <= y:
-        for k in range(x+1, y):
-            if k % 2 != 0:
-                impares.append(k)
-            else:
-                print('0')
-            print(sum(impares))
-            impares = []
-    if x > y:
-        for l in range(y+1, x):
-            if l % 2 != 0:
-                impares.append(l)
-            else:
-                print('0')
-            print(sum(impares))
-            impares = []
+x, y, z = map(float, input().split())
+k = [x,y,z]
+sortear = sorted(k, reverse=True)
+a = sortear[0]
+b = sortear[1]
+c = sortear[2]
+
+if a >= b + c:
+    print('NAO FORMA TRIANGULO')
+else:
+    if a**2 == b**2 + c**2:
+        print('TRIANGULO RETANGULO')
+    if a**2 > b**2 + c**2:
+        print('TRIANGULO OBTUSANGULO')
+    if a**2 < b**2 + c**2:
+        print('TRIANGULO ACUTANGULO')
+    if a == b == c:
+        print('TRIANGULO EQUILATERO')
+    if a == b and a != c or a == c and a != b or b == c and b != a:
+        print('TRIANGULO ISOSCELES')

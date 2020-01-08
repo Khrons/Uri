@@ -1,0 +1,10 @@
+x = input().split()
+
+while int(x[1]) <= 0:
+    x.remove(x[1])
+a = int(x[0])
+soma = 0
+for i in range(0, int(x[1])):
+    soma += a + i
+
+print(soma)

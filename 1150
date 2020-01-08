@@ -1,0 +1,14 @@
+x = int(input())
+z = int(input())
+while x >= z:
+    z = int(input())
+k = 0
+cont = 0
+while True:
+    k += x + 1
+    cont += 1
+    if k >= z:
+        break
+    else:
+        continue
+print(cont)

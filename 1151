@@ -1,0 +1,15 @@
+n = int(input())
+lista = []
+i = 0
+while i < n:
+    if i == 0 or i == 1:
+        lista.append(i)
+    if i > 1:
+        fibo = lista[i - 2] + lista[i - 1]
+        lista.append(fibo)
+    i += 1
+for k in range(0, n):
+    lista[k] = str(lista[k])
+
+lista = ' '.join(lista)
+print(lista)

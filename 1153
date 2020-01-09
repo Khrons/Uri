@@ -1,0 +1,11 @@
+n = int(input())
+a = int(n)
+fator = 1
+while True:
+    fator *= n * (a-1)
+    a -= 1
+    n = 1
+    if a <= 1:
+        break
+print(fator)
+

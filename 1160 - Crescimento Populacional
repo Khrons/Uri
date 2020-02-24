@@ -1,0 +1,17 @@
+from math import floor
+casos_teste = int(input())
+anos = 0
+for casos in range(casos_teste):
+    popu_a, popu_b, taxa_a, taxa_b = map(float, input().split())
+    while popu_a <= popu_b:
+        crescimento_a = floor(((taxa_a / 100) * popu_a) + popu_a)
+        crescimento_b = floor(((taxa_b / 100) * popu_b) + popu_b)
+        popu_a = crescimento_a
+        popu_b = crescimento_b
+        anos += 1
+        if anos > 100:
+            print('Mais de 1 seculo.')
+            break
+    else:
+        print(anos, 'anos.')
+    anos = 0

@@ -1,0 +1,21 @@
+x = float(input())
+
+if x <= 2000.00:
+    print('Isento')
+else:
+    valor = x - 2000.00
+    if valor <= 1000.00:
+        print('R$ %.2f' % (valor * 0.08))
+    else:
+        if 2500 >= valor > 1000.00:
+            a = 1000 * 0.08
+            b = (valor - 1000) * 0.18
+            c = a + b
+            print('R$ %.2f' % c)
+        else:
+            if valor >= 2500:
+                d = 1000 * 0.08
+                e = 1500 * 0.18
+                f = (valor - 2500) * 0.28
+                g = d + e + f
+                print('R$ %.2f' % g)

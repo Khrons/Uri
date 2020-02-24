@@ -1,0 +1,23 @@
+soma = 0
+valor = 0
+m = 1
+n = 1
+while m > 0 and n > 0:
+    m, n = map(int, input().split())
+    if m <= 0 or n <= 0:
+        break
+    else:
+        if m < n:
+            for i in range(m, n + 1):
+                soma += i
+                print(i, end=' ')
+            print('Sum={}'.format(soma))
+            soma = 0
+        if m > n:
+            for k in range(n, m + 1):
+                valor += k
+                print(k, end=' ')
+            print('Sum={}'.format(valor))
+            valor = 0
+        if m == n:
+            print(0, 'Sum={}'.format(m))

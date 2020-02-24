@@ -1,0 +1,9 @@
+dados = []
+while True:
+	user_ages = int(input())
+	if user_ages >= 0:
+		dados.append(user_ages)
+	else:
+		break
+media = sum(dados) / len(dados)
+print('{:.2f}'.format(media))

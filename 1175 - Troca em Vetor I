@@ -1,0 +1,7 @@
+lista = []
+for i in range(20):
+    n = int(input())
+    lista.append(n)
+    
+for k in range(20):
+    print('N[{}] ='.format(k), lista[19-k])

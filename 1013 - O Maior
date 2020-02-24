@@ -1,0 +1,10 @@
+n = str(input()).split(' ')
+a = int(n[0])
+b = int(n[1])
+c = int(n[2])
+MaiorAB = int((a+b+abs(a-b))/2)
+MaiorBC = int((b+c+abs(b-c))/2)
+if MaiorAB>MaiorBC:
+    print(MaiorAB, 'eh o maior')
+else:
+    print(MaiorBC, 'eh o maior')

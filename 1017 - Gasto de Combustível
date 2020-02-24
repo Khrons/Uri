@@ -1,0 +1,4 @@
+tempo = int(input())
+vm = int(input())
+cal = (tempo * vm) / 12
+print ('{:.3f}'.format(cal))

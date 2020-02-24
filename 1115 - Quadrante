@@ -1,0 +1,13 @@
+while True:
+    m, n = map(int, input().split())
+    if m == 0 or n == 0:
+        break
+    else:
+        if m > 0 and n > 0:
+            print('primeiro')
+        if m > 0 and n < 0:
+            print('quarto')
+        if m < 0 and n > 0:
+            print('segundo')
+        if m < 0 and n < 0:
+            print('terceiro')

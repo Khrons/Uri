@@ -1,0 +1,14 @@
+casos = int(input())
+divisor = []
+
+for i in range(casos):
+    x = int(input())
+    for k in range(1, x):
+        if x % k == 0:
+            divisor.append(k)
+    soma = sum(divisor)
+    if soma == x:
+        print(x, 'eh perfeito')
+    else:
+        print(x, 'nao eh perfeito')
+    divisor.clear()

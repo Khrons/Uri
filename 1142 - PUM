@@ -1,0 +1,8 @@
+n = int(input())
+numeros = 0
+for i in range(n):
+    for k in range(3):
+        numeros += 1
+        print(numeros, end=' ')
+    print('PUM')
+    numeros += 1

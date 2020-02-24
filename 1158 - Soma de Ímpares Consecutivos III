@@ -1,0 +1,14 @@
+num_casos = int(input())
+lista = []
+
+for i in range(num_casos):
+    x, y = map(int, input().split())
+    for k in range(y):
+        if x % 2 != 0:
+            lista.append(x)
+        else:
+            x += 1
+            lista.append(x)
+        x += 2
+    print(sum(lista))
+    lista.clear()

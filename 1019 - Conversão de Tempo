@@ -1,0 +1,18 @@
+N = int(input())
+h = N/3600
+m = N/60
+
+if h == 1:
+    h = 1;
+    m = 0;
+    s = 0
+elif h > 1:
+    h = N//3600
+    m = (N//60) - (N//3600)*60;
+    s = N - (N//60)*60
+else:
+    h = 0
+    m = N//60
+    s = N%60
+
+print(str(h) + ":" + str(m) + ":" + str(s))

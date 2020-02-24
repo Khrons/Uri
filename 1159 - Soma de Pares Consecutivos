@@ -1,0 +1,14 @@
+lista = []
+
+while True:
+    x = int(input())
+    if x == 0:
+        break
+    if x % 2 != 0:
+        x += 1
+    for i in range(5):
+        lista.append(x)
+        x += 2
+
+    print(sum(lista))
+    lista.clear()

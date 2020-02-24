@@ -1,0 +1,11 @@
+val = str(input()).split(' ')
+tri = (float(val[0])*(float(val[2]))/2)
+cir = float(val[2])**2*3.14159
+trap = ((float(val[0]))+(float(val[1])))*(float(val[2]))/2
+quad = float(val[1])**2
+ret = float(val[0])*float(val[1])
+print('TRIANGULO: {:.3f}'.format(tri))
+print('CIRCULO: {:.3f}'.format(cir))
+print('TRAPEZIO: {:.3f}'.format(trap))
+print('QUADRADO: {:.3f}'.format(quad))
+print('RETANGULO: {:.3f}'.format(ret))

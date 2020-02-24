@@ -1,0 +1,8 @@
+numero = int(input())
+contador = 1
+while numero != contador:
+	divisor = numero / contador
+	if numero % contador == 0:
+		print(contador)
+	contador += 1
+print(contador)

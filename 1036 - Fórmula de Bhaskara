@@ -1,0 +1,18 @@
+line = str(input(""))
+split = line.split(" ")
+a = float(split[0])
+b = float(split[1])
+c = float(split[2])
+
+delta = (b**2) - (4*a*c)
+
+try:
+    if delta > 0:
+        x = (-b + (delta ** (1 / 2))) / (2 * a)
+        y = (-b - (delta ** (1 / 2))) / (2 * a)
+        print("R1 = {:.5f}".format(x))
+        print("R2 = {:.5f}".format(y))
+    else:
+        print("Impossivel calcular")
+except ZeroDivisionError:
+    print("Impossivel calcular")

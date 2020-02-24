@@ -1,0 +1,9 @@
+while True:
+    m, n = map(int, input().split())
+    if m == n:
+        break
+    else:
+        if m > n:
+            print('Decrescente')
+        if m < n:
+            print('Crescente')

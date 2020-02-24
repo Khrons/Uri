@@ -1,0 +1,6 @@
+formula = 1
+num = 2
+for i in range(3, 39, 2):
+	formula += (i / num)
+	num *= 2
+print('{:.2f}'.format(formula))

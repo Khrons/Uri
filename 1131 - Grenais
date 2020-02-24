@@ -1,0 +1,30 @@
+empates = 0
+vitorias_inter = 0
+vitorias_gremio = 0
+contador_while = 0
+while True:
+    inter, gremio = map(int, input().split())
+    print('Novo grenal (1-sim 2-nao)')
+    if gremio == inter:
+        empates += 1
+    elif gremio > inter:
+        vitorias_gremio += 1
+    else:
+      vitorias_inter += 1
+    repeat = int(input())
+    if repeat == 1:
+        contador_while += 1
+        continue
+    if repeat == 2:
+        contador_while += 1
+        print(contador_while, 'grenais')
+        print('Inter:{}'.format(vitorias_inter))
+        print('Gremio:{}'.format(vitorias_gremio))
+        print('Empates:{}'.format(empates))
+        if vitorias_gremio > vitorias_inter:
+            print('Gremio venceu mais')
+        elif vitorias_inter > vitorias_gremio:
+            print('Inter venceu mais')
+        else:
+            print('Nao houve vencedor')
+        break

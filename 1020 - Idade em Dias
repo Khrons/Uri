@@ -1,0 +1,20 @@
+idade_em_dias = int(input())
+
+ano = idade_em_dias/365
+mes = idade_em_dias/30
+
+if ano == 1:
+    ano = 1
+    mes = 0
+    dia = 0
+elif ano > 1:
+    ano = idade_em_dias//365
+    mes = ((idade_em_dias) - (idade_em_dias//365) * 365) // 30
+    dia = ((idade_em_dias) - (idade_em_dias//365) * 365) - mes * 30
+else:
+    ano = 0
+    mes = idade_em_dias//30
+    dia = idade_em_dias % 30
+
+
+print(str(ano) + " ano(s)\n" + str(mes) + " mes(es)\n" + str(dia) + " dia(s)")

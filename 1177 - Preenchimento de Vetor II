@@ -1,0 +1,7 @@
+valor_armazenado = int(input())
+x = 0
+for i in range(1000):
+    print('N[{}] = {}'.format(i, x))
+    x += 1
+    if x >= valor_armazenado:
+        x = 0

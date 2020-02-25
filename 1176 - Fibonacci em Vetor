@@ -1,0 +1,18 @@
+def fibonacci(numero): 
+    lista = []
+    numeros_fibo = 0
+    while numeros_fibo <= numero:
+        if numeros_fibo == 0 or numeros_fibo == 1:
+            lista.append(numeros_fibo)
+        if numeros_fibo > 1:
+            fibo = lista[numeros_fibo - 2] + lista[numeros_fibo - 1]
+            lista.append(fibo)
+        numeros_fibo += 1
+    return lista
+    
+
+casos = int(input())
+for k in range(casos):
+    n = int(input())
+    x = fibonacci(n)[n]
+    print('Fib({}) = {}'.format(n, x))

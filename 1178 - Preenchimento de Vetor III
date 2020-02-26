@@ -1,0 +1,4 @@
+valor = float(input())
+for i in range(100):
+    print('N[{}] = {:.4f}'.format(i, valor))
+    valor /= 2
